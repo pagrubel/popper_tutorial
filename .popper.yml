@@ -4,7 +4,18 @@ metadata:
   license: CC-BY-4.0
   publication_type: article
   upload_type: publication
-pipelines: {}
+pipelines:
+  mypipe:
+    envs:
+      host:
+        args: []
+    parameters: []
+    path: pipelines/mypipe
+    requirements: {}
+    stages:
+    - download-data
+    - run-analysis
+    - plot-graphs
 search_sources:
 - popperized
 version: 1
